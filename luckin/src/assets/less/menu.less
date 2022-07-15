@@ -1,0 +1,72 @@
+.menu{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #f7f8fa;
+    
+    .search .van-icon-search{
+        color: #0b34ba;
+    }
+    // 分类 begin
+    .product-options{
+        width: 355px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-around;
+        font-size: 14px;
+        text-align: center;
+    }
+    .product-options .icon{
+        width: 35px;
+    }
+    .product-options .options-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-options .text{
+        color: #0b34ba;
+    }
+    // 分类 end
+
+    // 商品 begin
+    .product-container{
+        width: 355px;
+        margin: 0 auto;
+    }
+    .product-container .product-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: 10px;
+    }
+    .product-container .left{
+        display: flex;
+        align-items: center;
+        color: #777;
+        font-size: 15px;
+        .en{
+            font-size: 12px;
+        }
+    }
+    .product-container .left .en{
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .product-container .image{
+        width: 70px;
+        margin-right: 5px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .product-container .price{
+        color: #0b34ba;
+        font-weight: bold;
+    }
+    // 商品 end
+}

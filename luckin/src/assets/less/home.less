@@ -1,0 +1,141 @@
+.home{
+    padding-bottom: 50px;
+    background-color: #f7f8fa;
+    .navbar .van-icon-search{
+        color: #0b34ba;
+    }
+    .navbar .van-search{
+        padding: 10px 0;
+    }
+    .navbar .home-nav{
+        width: 120px;
+        display: flex;
+        font-size: 15px;
+        .t1 {
+            margin-right: 10px;
+            font-weight: bold;
+            color: #777;
+        }
+        .t2 {
+            color: #0b34ba;
+            font-weight: bold;
+        }
+    
+    }
+    .navbar .van-search{
+        height: 46px;
+        //不让内边距撑大盒子
+        box-sizing: border-box;
+    }
+    // 轮播图开始
+    .banner {
+        width: 355px;
+        height: 265px;
+        margin: 0 auto;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .banner .van-swipe {
+        width: 100%;
+        height: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .banner .indicator{
+        width: 100px;
+        position: absolute;
+        right: 10px;
+        bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .van-swipe .bullte {
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        &.active{
+            background-color: #0b34ba;
+        }
+    }
+    // 轮播图结束
+
+    // 热卖推荐 begin
+    .hot {
+        width: 355px;
+        height: 50px;
+        background-color: white;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+    }
+    .hot>div{
+        width: 85px;
+        height: 32px;
+        background-color: #0b34ba;
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        font-size: 14px;
+        border-top-right-radius: 20px;
+    }
+    // 热卖推荐 end
+
+    // 热卖商品 begin
+    .product {
+        width: 355px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .product .item{
+        width: 170px;
+        height: 250px;
+        background-color: white;
+        padding: 10px;
+        margin: 0 auto 10px auto;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #888;
+        border-radius: 10px;
+        .top {
+            width: 152px;
+            height: 152px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .middle {
+            margin: 10px 0;
+        }
+        .en {
+            font-size: 14px;
+            // 单行文本溢出隐藏
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .price {
+            color: #0b34ba;
+            font-weight: bold;
+        }
+        span{
+            background-color: #0b34ba;
+            color: white;
+            font-size: 5px;
+            padding: 5px 0;
+            display: flex;
+            justify-content: space-around;
+            width: 25px;
+            border-radius: 5px;
+            position: relative;
+            top: -152px;
+            left: 8px;
+            text-align: center;
+        }
+    }
+    //热卖商品 end
+
+}

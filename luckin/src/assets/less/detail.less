@@ -1,0 +1,114 @@
+.detail{
+    padding-top: 46px;
+    padding-bottom: 60px;
+    background-color: #f8f8f8;
+    .van-icon-arrow-left,
+    .van-nav-bar__text{
+        color: #0b34ba;
+    }
+    .detailInfo {
+        width: 355px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: -20px 10px 0;
+        background-color: white;
+        position: relative;
+        z-index: 9;
+        border-radius: 10px 10px 0 0;
+
+        .title{
+            margin: 25px 0;
+        }
+        .title div:first-of-type{
+            display: flex;
+            // padding: 0 10px;
+            font-size: 17px;
+            justify-content: space-between;
+            align-items: center;
+            color: #555;
+        }
+        .title .price{
+            font-size: 18px;
+            color: #0b34ba;
+        }
+        .title .en{
+            // padding: 0 10px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .rule{
+            border-bottom: 1px solid #ddd;
+        }
+        .rule .item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 20px;
+            }
+        }
+        .rule .desc{
+            width: 60px;
+            font-size: 15px;
+            color: #333;
+        }
+        .rule li{
+            width: 55px;
+            height: 25px;
+            overflow: hidden;
+            background-color: #eaeaea;
+            float: left;
+            text-align: center;
+            line-height: 25px;
+            border-radius: 12.5px;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #333;
+            &.active{
+                color: white;
+                background-color: #0b34ba;
+            }
+        }
+        .rule li:last-child{
+            margin-right: 0;
+        }
+        .number{
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            .van-stepper__minus{
+                color: #0b34ba;
+                border: 1px solid #0b34ba;
+            }
+            .van-stepper__plus{
+                background-color: #0b34ba;
+            }
+        }
+        .content{
+            padding: 30px 0 20px;
+            .describe{
+                color: #333;
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+            li{
+                font-size: 13px;
+                color: #888;
+                text-align: justify;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .good-action{
+        position: relative;
+        z-index: 9;
+    }
+    .van-info{
+        background-color: #0b34ba;
+    }
+}

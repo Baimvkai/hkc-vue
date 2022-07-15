@@ -1,0 +1,63 @@
+.like{
+    padding-top: 46px;
+    background-color: #f7f8fa;
+    .van-nav-bar .van-icon{
+        color: #0b34ba;
+    }
+    .van-nav-bar__text{
+        color: #0b34ba;
+    }
+    .bg{
+        background-color: #0b34ba;
+        height: 100px;
+    }
+    .clearfix{
+        width: 355px;
+        background-color: white;
+        margin: 0 auto;
+        position: relative;
+        top: -20px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .like-item{
+        width: calc(~"100% / 3 - 10px + 20px / 3");
+        float: left;
+        margin-bottom: 10px;
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+    }
+    .product-item{
+        padding-top: 10px;
+        padding-left: 10px;
+        .pro-name{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .pro-enname{
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: #999;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .pro-price{
+            font-size: 14px;
+            color: #0b34ba;
+            font-weight: 700;
+        }
+        .delete{
+            width: 15px;
+            height: 15px;
+            margin-top: 2px;
+            color: #999;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
